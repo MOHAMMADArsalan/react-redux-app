@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Row = ({ children, ...rest }) => {
+const Row = ({ children, className ,...rest }) => {
     return (
-        <div className="flex-row" {...rest}> {children}</div>
+        <div className={`flex-row ${className}`} {...rest}> {children}</div>
     );
 }
 

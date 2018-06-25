@@ -1,0 +1,20 @@
+.stepperContainer {
+    border-left: 2px solid $blue;
+    /* margin-left: -1px; */
+    position: relative;
+    padding-left: 1em;
+  }
+  
+  .stepperPointer {
+    border: 2px solid $blue;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $blue;
+    border-radius: 50%;
+    margin-right: 7px;
+    position: absolute;
+    /* align-items: center; */
+    left: -6px;
+    top: 5px;
+  }

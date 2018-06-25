@@ -21,6 +21,7 @@ import LinkTag from "./LinkTag/LinkTag";
 import Col from "./Col/Col";
 import Avator from "./Avator/Avator";
 import Button from "./Button/Button";
+import Header from "./Header/Header";
 import OnlineStatus from "./OnlineStatus/OnlineStatus";
 
 //Project
@@ -42,6 +43,9 @@ import UserProjectDetail  from "./UserProjectDetail/UserProjectDetail";
 import UserProjectTimeLine from "./UserProjectTimeLine/UserProjectTimeLine";
 import UserDetailFooter from "./UserDetailFooter/UserDetailFooter";
 
+// Stepper 
+import  StepperPointer from "./StepperPointer/StepperPointer";
+import StepperContainer from "./StepperContainer/StepperContainer";
 
 
 export {
@@ -58,6 +62,7 @@ export {
     Trancate,
     TableBody,
     TableRow,
+    Header,
     TableCol,
     OnlineStatus,
     ExpertLevel,
@@ -73,5 +78,7 @@ export {
     UserDetailWrapper,
     UserProjectDetail,
     UserProjectTimeLine,
-    UserDetailFooter
+    UserDetailFooter,
+    StepperPointer,
+    StepperContainer
 }

@@ -6,34 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server",
     "clean": "rimraf dist",
-    "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
-    "precommit": "cross-env npm run lint && npm test",
-    "prepush": "cross-env npm run lint && npm test"
+    "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors"
   },
   "author": "Mohammad Arsalan",
   "license": "MIT",
-  "jest": {
-    "setupFiles": [
-      "<rootDir>/config/jest/shim.js"
-    ],
-    "collectCoverageFrom": [
-      "app/**/*.{js,jsx,ts,tsx}"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/assetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/config/jest/assetsTransformer.js"
-    },
-    "testMatch": [
-      "**/?(*.)(spec|test).js?(x)"
-    ],
-    "transform": {
-      "\\.js$": "babel-jest"
-    }
-  },
   "dependencies": {
     "cross-env": "5.2.0",
     "react": "16.4.1",
@@ -41,8 +17,9 @@
     "react-dom": "16.4.1",
     "react-hot-loader": "4.3.2",
     "react-redux": "^5.0.7",
-    "react-router-dom": "4.3.0",
-    "redux": "^4.0.0"
+    "react-router-dom": "^4.3.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

@@ -2,10 +2,10 @@ import React from 'react';
 
 import { TableRow, TableCol, Category, ProjectWrapper, ExpertWrapper } from "./../"
 
-const TableBody = ({ list }) => {
+const TableBody = ({ list, onShowUserDetails }) => {
     return (
         <React.Fragment>
-            {list.map((data, index) => <TableRow key={index}>
+            {list.map((data, index) => <TableRow key={index} onClick={() => onShowUserDetails(data.id)} className="cursor">
                 <TableCol >
                     <Category {...data.category} />
                 </TableCol>

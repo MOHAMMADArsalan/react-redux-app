@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TableCol = ({ children , ...rest}) => {
+const TableCol = ({ children , className,  ...rest}) => {
     return (
-        <div className="flexOne" {...rest}>{children}</div>
+        <div className={ `flexOne ${className}` } {...rest}>{children}</div>
     );
 }
 

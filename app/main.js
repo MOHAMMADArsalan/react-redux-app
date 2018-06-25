@@ -1,23 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from "react-redux"
 import { AppContainer } from 'react-hot-loader';
 
-import App from './screens/App';
+import { store } from "./store"
+
+import Routers from "./config/routes"
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <Provider store={store}>
+        <Component />
+      </Provider>
     </AppContainer>,
     document.getElementById('root'),
   );
 };
 
-render(App);
+render(Routers);
 
 if (module.hot) {
-  module.hot.accept('./screens/App', () => {
-    const newApp = require('./screens/App').default;
+  module.hot.accept('./config/routes', () => {
+    const newApp = require('./config/routes').default;
     render(newApp);
   });
 }

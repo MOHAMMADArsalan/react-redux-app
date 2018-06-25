@@ -1,0 +1,21 @@
+.searchWrapper {
+    width: 90%;
+    margin: 2em auto;
+    @extend .align-item-center;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid $gray-50;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    outline: none;
+  }
+  
+  .searchFilterContainer {
+    width: 15%;
+  }

@@ -17,6 +17,7 @@
 
 .userContainer {
     width: 80%;
+    min-width: 20em;
     @extend .wrapper;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .userProjectTimeLineContainer {
-    padding: 1.2em;
+    padding: 1.2em 2.5em;
 }
 
 .avator {

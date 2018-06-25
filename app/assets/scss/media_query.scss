@@ -1,0 +1,37 @@
+@media screen and (max-width: 700px) {
+    .tableContainer {
+        width: 50em;
+        overflow-x: scroll;
+    }
+    .userFooter,
+    .userHeader {
+        display: block;
+        padding: 10px !important;
+    }
+    .userFooter {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .userDetailBody {
+        border: none;
+        display: block;
+        .button {
+            display: block;
+        }
+    }
+    .userProjectTimeLineContainer {
+        padding-top: 0;
+        padding-bottom: 0;
+        h3 {
+            margin-top: 0px;
+        }
+    }
+    .button {
+        width: 100%;
+        display: block;
+        background-color: $gray-100;
+        color: $black;
+        border: 1px solid $gray-300;
+        margin-top: 1em;
+    }
+}
