@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import Root from './config/Root';
+import App from './screens/App';
 
 const render = (Component) => {
   ReactDOM.render(
@@ -13,11 +13,11 @@ const render = (Component) => {
   );
 };
 
-render(Root);
+render(App);
 
 if (module.hot) {
-  module.hot.accept('./config/Root', () => {
-    const newApp = require('./config/Root').default;
+  module.hot.accept('./screens/App', () => {
+    const newApp = require('./screens/App').default;
     render(newApp);
   });
 }

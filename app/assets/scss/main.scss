@@ -1,5 +1,164 @@
-$color: #262828;
-
+@import 'color';
 body {
-  color: $color;
+  color: $black;
+  font-family: Arial, sans-serif
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.button {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: initial;
+  border: none;
+}
+
+.button-primary {
+  background-color: $blue;
+}
+
+.wrapper {
+  border-radius: 5px;
+  margin: auto;
+  border: 1px solid $gray;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  @extend .flex-row;
+  flex-direction: column
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.flexOne {
+  flex: 1;
+}
+
+.flexTwo {
+  flex: 2;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.borderBottom {
+  border-bottom: 1px solid $gray;
+}
+
+.tag {
+  background-color: $gray;
+  color: $blue;
+  padding: 2px 3px;
+  margin-bottom: 2px;
+}
+
+.price {
+  color: $gray-200;
+}
+
+.description {
+  margin-top: 5px;
+  word-spacing: 3px;
+  color: $gray-200;
+}
+
+.name {
+  color: $blue;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.projectNumber {
+  margin-right: 8px;
+}
+
+.searchWrapper {
+  width: 90%;
+  margin: 2em auto;
+  @extend .align-item-center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  outline: none;
+}
+
+.searchFilterContainer {
+  width: 15%;
+}
+
+.userDetailBody {
+  .button {
+    display: none;
+  }
+}
+
+.caterogy {
+  @extend .flex-column;
+  @extend .align-item-center;
+  @extend .justify-content-center;
+}
+
+@import './user.scss';
+@import "./table.scss";
+@media screen and (max-width: 700px) {
+  .userFooter,
+  .userHeader {
+    display: block;
+    padding: 10px !important;
+  }
+  .userFooter {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .userDetailBody {
+    border: none;
+    display: block;
+    .button {
+      display: block;
+    }
+  }
+  .userProjectTimeLineContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+    h3 {
+      margin-top: 0px;
+    }
+  }
+  .button {
+    width: 100%;
+    display: block;
+    background-color: $gray-100;
+    color: $black;
+    border: 1px solid $gray-300;
+    margin-top: 1em;
+  }
 }

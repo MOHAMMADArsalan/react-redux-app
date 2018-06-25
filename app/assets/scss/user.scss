@@ -1,0 +1,36 @@
+.userHeader {
+    justify-content: space-between;
+    padding: 2em; // @extend .borderBottom;
+}
+
+.userFooter {
+    padding: 2em 2em 1em;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+
+
+.userDetailBody {
+    border-top: 1px solid #efefef;
+    @extend .borderBottom;
+}
+
+.userContainer {
+    width: 80%;
+    @extend .wrapper;
+}
+
+.userProjectContainer {
+    padding: 1.2em;
+    border-left: 1px solid $gray;
+}
+
+.userProjectTimeLineContainer {
+    padding: 1.2em;
+}
+
+.avator {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}

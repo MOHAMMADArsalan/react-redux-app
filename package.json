@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-boilerplate",
+  "name": "react-redux-test",
   "version": "2.1.0",
-  "description": "Minimalistic ES6 React boilerplate",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -14,7 +14,7 @@
     "precommit": "cross-env npm run lint && npm test",
     "prepush": "cross-env npm run lint && npm test"
   },
-  "author": "Kliment Petrov <kleopetroff@gmail.com>",
+  "author": "Mohammad Arsalan",
   "license": "MIT",
   "jest": {
     "setupFiles": [
@@ -37,9 +37,12 @@
   "dependencies": {
     "cross-env": "5.2.0",
     "react": "16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "16.4.1",
     "react-hot-loader": "4.3.2",
-    "react-router-dom": "4.3.0"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "4.3.0",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -47,6 +50,7 @@
     "babel-eslint": "8.2.4",
     "babel-jest": "23.0.1",
     "babel-loader": "7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
